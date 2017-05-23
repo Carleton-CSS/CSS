@@ -7,20 +7,6 @@ Ideas from Jadrian Miles.
 
 @import url('http://fonts.googleapis.com/css?family=Georgia|Cabin|Playfair Display');
 
-#right {
- width: 40%;
- float: right;
- margin: 0em 0em 0em 0em;
- padding: 5px 5px 5px 5px;
- }
-
-#left {
- width: 40%;
- float: left;
- margin: 0em 0em 0em 0em;
- padding: 5px 5px 5px 5px;
- }
-
 #course_header {
  width: 100%;
  margin: 0px;
@@ -62,6 +48,60 @@ div.prewrap {
  overflow: auto;
  }
 
+.project {
+ -webkit-column-count: 2; /* Chrome, Safari, Opera */
+ -moz-column-count: 2; /* Firefox */
+ column-count: 2;
+ }
+
+.right {
+  width: 45%;
+  float: right;
+  margin: 0em 0em 0em 0em;
+  padding: 5px 5px 5px 5px;
+  }
+
+.left {
+  width: 45%;
+  float: left;
+  margin: 0em 0em 0em 0em;
+  padding: 5px 5px 5px 5px;
+  }
+
+.box {
+ position: relative;
+ height: 45%;
+ margin: 2% 2% 2% 2%;
+}
+
+.thumbnail {
+ border-radius: 15px 15px 15px 15px;
+ height: 70%;
+ width: 100%;
+ background: #fff;
+ position: relative;
+ text-align: center;
+ overflow: hidden;
+ padding: 0;
+ }
+
+a.title {
+ color: black;
+ font-size: 140%;
+ font-weight: bold;
+ font-family: monospace;
+ text-decoration: none;
+ text-align: center;
+ }
+
+.date{
+ color: #222;
+ font-size: 100%;
+ font-weight: 100;
+ margin-left: 5px;
+ text-decoration: none;
+ }
+
 body {
  margin: 0;
  background-color: #FAFAFA;
@@ -71,39 +111,12 @@ body {
  font-size: 90%;
  }
 
-h1 {
- font-family: 'Cabin', serif;
- font-weight: normal;
- margin: 0px;
- padding: 0px;
- font-size: 160%;
- line-height: 1em;
- }
-
-h2 {
- font-family: 'Cabin', serif;
- font-weight: normal;
- margin: 0px;
- padding: 5px 0px 0px 0px;
- font-size: 140%;
- line-height: 1em;
- }
-
-h3 {
- font-family: 'Cabin', serif;
- font-weight: bold;
- margin: 0px;
- padding: 15px 0px 0px 0px;
- font-size: 120%;
- line-height: 1em;
- }
-
 p {
  margin: 1.75ex 0ex 0ex 0ex;
  }
 
 ul{
- position: fixed;
+ position: relative;
  top: 0;
  width: 100%;
  list-style-type: none;
@@ -115,6 +128,12 @@ ul{
 
 li {
  float: left;
+ }
+
+.icon {
+ right: 16px;
+ position: absolute;
+ align-self: center;
  }
 
 li a {
