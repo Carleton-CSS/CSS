@@ -1,5 +1,5 @@
 /*
-CSS for Carleton College CSS 
+CSS for Carleton College CSS
 Keaton Mertz, 2017
 Adapted from Jeff Ondich
 Ideas from Jadrian Miles.
@@ -100,7 +100,7 @@ h3 {
 
 p {
  margin: 1.75ex 0ex 0ex 0ex;
- } 
+ }
 
 ul{
  position: fixed;
@@ -138,10 +138,10 @@ a {
  text-decoration: underline;
  }
 
-a:visited {
+/*a:visited {
  color: #770088;
  text-decoration: underline;
- }
+ }*/
 
 a:hover {
  background-color: #D8D8D8;
