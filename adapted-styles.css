@@ -7,6 +7,10 @@ Ideas from Jadrian Miles.
 
 @import url('http://fonts.googleapis.com/css?family=Georgia|Cabin|Playfair Display');
 
+
+
+
+
 #right {
  width: 40%;
  float: right;
@@ -179,12 +183,31 @@ p {
 }
 
 ul {
- margin: 0ex;
- padding-left: 2.5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 li {
- margin: 1ex 0ex 0ex 0ex;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 
 a {
