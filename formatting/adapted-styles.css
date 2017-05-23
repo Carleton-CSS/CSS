@@ -126,7 +126,7 @@ li a {
  }
 
 li a:hover:not(.active) {
- background-color: #111;
+ background-color: black;
  }
 
 .active {
@@ -141,13 +141,13 @@ a {
 /*a:visited {
  color: #770088;
  text-decoration: underline;
- }*/
+ }
 
 a:hover {
  background-color: #D8D8D8;
  text-decoration: none;
  cursor: pointer;
- }
+ }*/
 
 @media print {
  body {
