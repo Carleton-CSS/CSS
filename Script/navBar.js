@@ -17,7 +17,7 @@ function navBar() {
   }
   if(bool == true && currentLocation.search("projects")==0){
     bool = false;
-    navBar +="<li class='dropdown active'><a class='dropbtn active' title='Current Page'><i class='down'></i> Projects</a><div class='dropdown-content'> <a classhref='#'>Link 1</a> <a href='#'>Link 2</a> <a href='#'>Link 3</a> </div></li>";
+    navBar +="<li class='dropdown active'><a class='dropbtn active' title='Current Page'><i class='down'></i> Projects</a><div class='dropdown-content' id='projectDrop'></div></li>";
   }else{
     navBar +="<li class='dropdown'><a class='dropbtn' title='Projects Page'href='https://carleton-css.github.io/CSS/projects'><i class='down'></i> Projects</a><div class='dropdown-content' id='projectDrop'></div></li>";
   }
