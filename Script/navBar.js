@@ -17,9 +17,9 @@ function navBar() {
   }
   if(bool == true && currentLocation.search("projects")==0){
     bool = false;
-    navBar +="<li class='dropdown active'><a class='dropbtn active' title='Current Page'><i class='down'></i> Projects</a><div class='dropdown-content'> <a classhref='#'>Link 1</a> <a href='#'>Link 2</a> <a href='#'>Link 3</a> </div></li>";;
+    navBar +="<li class='dropdown active'><a class='dropbtn active' title='Current Page'><i class='down'></i> Projects</a><div class='dropdown-content'> <a classhref='#'>Link 1</a> <a href='#'>Link 2</a> <a href='#'>Link 3</a> </div></li>";
   }else{
-    navBar +="<li class='dropdown'><a class='dropbtn' title='Projects Page'href='https://carleton-css.github.io/CSS/projects'><i class='down'></i> Projects</a><div class='dropdown-content'> <a classhref='#'>Link 1</a> <a href='#'>Link 2</a> <a href='#'>Link 3</a> </div></li>";
+    navBar +="<li class='dropdown'><a class='dropbtn' title='Projects Page'href='https://carleton-css.github.io/CSS/projects'><i class='down'></i> Projects</a><div class='dropdown-content' id='projectDrop'></div></li>";
   }
   if(bool == true && currentLocation.search("database")==0){
     bool = false;
@@ -41,7 +41,23 @@ function navBar() {
   }
   navBar+="<li ><img class='icon' src='https://carleton-css.github.io/CSS/formatting/logo.ico' alt='Carleton College' ></li></ul>";
 
-  document.getElementById('navBar').innerHTML = navBar
+  document.getElementById('navBar').innerHTML = navBar;
+  projectDrop();
+}
 
 
+function projectDrop() {
+  var file = new XMLHttpRequest();
+  file.open("GET", "https://carleton-css.github.io/CSS/projects/projectDrop.txt", true);
+  console.log(file.readyState);
+  file.onreadystatechange = function() {
+    console.log(file.readyState);
+    if (file.readyState === 4) {  // Makes sure the document is ready to parse
+      if (file.status === 200) {  // Makes sure it's found the file
+        text = file.responseText;
+        console.log(text);
+        document.getElementById("projectDrop").innerHTML = text;
+        }
+      }
+    }
 }
