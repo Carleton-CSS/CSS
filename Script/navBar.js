@@ -5,7 +5,7 @@
  */
 
 //document.getElementById("image").src = "pic_mountain.jpg";
-function myFunction() {
+function navBar() {
   var navBar = "<ul>";
   var bool = true;
   var currentLocation = window.location.href;  currentLocation = currentLocation.slice(currentLocation.search("CSS/")+4);
@@ -17,10 +17,16 @@ function myFunction() {
   }
   if(bool == true && currentLocation.search("projects")==0){
     bool = false;
-    navBar +="<li><a class='active' title='Current Page'>Projects</a></li>";
+    navBar +="<li class='dropdown active'><a class='dropbtn' title='Current Page'><i class='down'></i> Projects</a><div class='dropdown-content'> <a classhref='#'>Link 1</a> <a href='#'>Link 2</a> <a href='#'>Link 3</a> </div></li>";;
   }else{
-    navBar +="<li><a title='Projects Page'href='http://carleton-css.github.io/CSS/projects'>Projects</a></li>";
+    navBar +="<li class='dropdown'><a class='dropbtn' title='Projects Page'href='http://carleton-css.github.io/CSS/projects'><i class='down'></i> Projects</a><div class='dropdown-content'> <a classhref='#'>Link 1</a> <a href='#'>Link 2</a> <a href='#'>Link 3</a> </div></li>";
   }
+
+
+
+
+
+
   if(bool == true && currentLocation.search("database")==0){
     bool = false;
     navBar += "<li><a class='active' title='Current Page'>ICs & Components</a></li>";
