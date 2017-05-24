@@ -47,8 +47,15 @@ function navBar() {
 
 
 function projectDrop() {
-  var file = new XMLHttpRequest();
-  file.open("GET", "https://carleton-css.github.io/CSS/projects/projectDrop.txt", true);
+  var projects = ["Analog-Drone-Circuit","Analog Drone Curcuit","3D-POV-Display","3D POV"];
+  /*projects.push();*/
+  var projectDrop = "";
+  while(projects.length>1){
+    projectDrop += "<a href='https://carleton-css.github.io/CSS/projects/"+projects.shift()+"'>"+projects.shift()+"</a>";
+  }
+  document.getElementById("projectDrop").innerHTML = projectDrop;
+  /*var file = new XMLHttpRequest();
+  file.open("GET", "./projects/projectDrop.txt", true);
   console.log(file.readyState);
   file.onreadystatechange = function() {
     console.log(file.readyState);
@@ -57,7 +64,7 @@ function projectDrop() {
         text = file.responseText;
         console.log(text);
         document.getElementById("projectDrop").innerHTML = text;
-        }
       }
-    }
+      }
+    }*/
 }
