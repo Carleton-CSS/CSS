@@ -116,6 +116,8 @@ a.title {
  }
 
 .project{
+ height: auto;
+ width: auto;
  max-width: 800px;
  max-height: 400px;
  left: 50%;
