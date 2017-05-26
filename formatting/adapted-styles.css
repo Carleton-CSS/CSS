@@ -115,10 +115,11 @@ a.title {
  text-align: center;
  }
 
- .project{
-   margin: auto;
-  max-width: 800px;
-  max-height: 400px
+.project{
+ max-width: 800px;
+ max-height: 400px;
+ left: 50%;
+ transform: translate(-50%, 0%);
   }
 
 .date{

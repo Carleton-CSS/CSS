@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href='../formatting/adapted-styles.css'>
-  <link rel="shortcut icon" href="../formatting/icon.ico" />
-  <script type="text/javascript" src="../Script/navBar.js"></script>
-  <title>CSS Contact</title>
-
-</head>
-<body onload="navBar()">
-<div id="navBar"></div>
-
-</body>
-</html>
+document.getElementById("title").innerHTML = "3D POV Display";
+document.getElementById("image").src ='./images/3D-POV-Display.jpg'
+document.getElementById("body").innerHTML = "POV stands for percistance of vision";
