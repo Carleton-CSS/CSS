@@ -104,14 +104,14 @@ a.title {
  text-align: center;
  }
 
-title {
+.title {
  color: black;
  font-size: 140%;
  font-weight: bold;
  font-family: monospace;
  text-decoration: none;
  text-align: center;
- } 
+ }
 
 .date{
  color: #222;
