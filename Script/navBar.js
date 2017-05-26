@@ -19,7 +19,7 @@ function navBar() {
     bool = false;
     navBar +="<li class='dropdown active'><a class='dropbtn active' title='Current Page'><i class='down'></i> Projects</a><div class='dropdown-content' id='projectDrop'></div></li>";
   }else{
-    navBar +="<li class='dropdown'><a class='dropbtn' title='Projects Page'href='https://carleton-css.github.io/CSS/projects'><i class='down'></i> Projects</a><div class='dropdown-content' id='projectDrop'></div></li>";
+    navBar +="<li class='dropdown'><a class='dropbtn' title='Projects Page'><i class='down'></i> Projects</a><div class='dropdown-content' id='projectDrop'></div></li>";
   }
   if(bool == true && currentLocation.search("database")==0){
     bool = false;
@@ -47,11 +47,11 @@ function navBar() {
 
 
 function projectDrop() {
-  var projects = ["Analog-Drone-Circuit","Analog Drone Curcuit","3D-POV-Display","3D POV"];
+  var projects = ["redirect","All Projects","Analog-Drone-Circuit","Analog Drone Curcuit","3D-POV-Display","3D POV"];
   /*projects.push();*/
   var projectDrop = "";
   while(projects.length>1){
-    projectDrop += "<a href='https://carleton-css.github.io/CSS/projects/"+projects.shift()+"'>"+projects.shift()+"</a>";
+    projectDrop += "<a href='https://carleton-css.github.io/CSS/projects/details?proj="+projects.shift()+"'>"+projects.shift()+"</a>";
   }
   document.getElementById("projectDrop").innerHTML = projectDrop;
   /*var file = new XMLHttpRequest();
