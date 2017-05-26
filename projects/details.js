@@ -1,5 +1,5 @@
 var urlParams = new URLSearchParams(window.location.search);
-var project = urlParams.get('proj'));
+var project = urlParams.get('proj');
 project = 'test'
 
 var head= document.getElementsByTagName('head')[0];
