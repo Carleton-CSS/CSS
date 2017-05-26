@@ -3,4 +3,4 @@ console.log(urlParams.get('action'));
 
 var fileref=document.createElement('script')
 fileref.setAttribute("type","text/javascript")
-fileref.setAttribute("src", './project-page/test.js')
+fileref.setAttribute("src", './project-pages/test.js')
